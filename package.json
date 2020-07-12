@@ -1,0 +1,23 @@
+{
+  "name": "RSWikiCapeCustomizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dev.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "fs-extra": "^9.0.1",
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "start": "gulp babel-watch"
+  },
+  "author": "Clay Larson",
+  "license": "ISC"
+}

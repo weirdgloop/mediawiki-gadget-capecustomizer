@@ -1,0 +1,85 @@
+.rsCapeCustomizer_content {
+  display: flex;
+  align-items: flex-start;
+}
+.rsCapeCustomizer_maxCape {
+  width: 250px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-right: 60px;
+  margin-bottom: 0;
+  position: relative;
+}
+#max-cape {
+  display: block;
+  width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+.rsCapeCustomizer_capeBackground {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 160px;
+  background-image: url('https://runescape.wiki/images/5/51/Max_cape_detail.png');
+  background-size: 234px auto;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.rsCapeCustomizer_colorPicker {
+  width: 340px;
+  margin-right: 60px;
+}
+.rsCapeCustomizer_colorInputWrapper {
+  position: relative;
+  padding-bottom: 19px;
+}
+.rsCapeCustomizer_colorInputWrapper:not(:last-child) {
+  margin-bottom: 15px;
+}
+.rsCapeCustomizer_colorInputColorPicker,
+.rsCapeCustomizer_colorInputTextInput {
+  height: 30px;
+  vertical-align: middle;
+}
+.rsCapeCustomizer_colorInputTextInput {
+  font-size: 16px;
+  margin: 0 2px;
+}
+.rsCapeCustomizer_colorInputColorPicker {
+  width: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.rsCapeCustomizer_colorInputPostfix,
+.rsCapeCustomizer_colorInputPrefix {
+  font-size: 14px;
+  vertical-align: sub;
+}
+.rsCapeCustomizer_colorInputLabel {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.rsCapeCustomizer_colorInputErrorMessage {
+  display: none;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #a20000;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  margin: 0 !important;
+}
+.rsCapeCustomizer_inputErrorMessage-visible {
+  display: block;
+}
