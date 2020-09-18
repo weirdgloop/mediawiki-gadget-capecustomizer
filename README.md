@@ -1,6 +1,6 @@
 ### *RuneScape* cape customizer
 
-This is a super simple project to allow development of the cape customizer mini app for use on [runescape.wiki](https://runescape.wiki).
+This is a super simple project to allow development of the [cape customizer mini app](https://sandbox.cjl750.vercel.app/rs-cape-customizer) for use on [runescape.wiki](https://runescape.wiki).
 
 Since the RS Wiki runs on [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki), which doesn’t allow ES6, this project just helps us develop in ES6 and automatically spit out wiki-compliant JavaScript by using Babel.
 
@@ -17,3 +17,28 @@ Modify `dev.js` to your heart’s content. Every time you save, the file at `bui
 `Ctrl + C` to stop the process.
 
 If you don’t want run a process to continually update the build file every time you save `dev.js`, you can transpile manually by running `gulp babel`.
+
+
+## Template minification
+
+For performance purposes, we include minified HTML in the JS file, but such markup can be difficult to modify if necessary.
+
+For this reason, prettified HTML is available in the templates folder. This can be minified using the functions below in your browser console when it is ready to be updated in the JS file.
+
+```
+// minification is good enough for our purposes here; probably not a flawless solution
+function hackyTemplateMinification(templateLiteral) {
+  // remove whitespace between one closing tag > and the next opening tag <
+  const simpleWhitespaceRemovalPattern = />[\n\s+]*([^\n\s]?)[\n\s]*</gm;
+  const initialPass = templateLiteral.replace(simpleWhitespaceRemovalPattern, '>$1<');
+  // trim whitespace around each element's textContent
+  const secondayWhitespaceRemovalPattern = />[^\w?.!><()]*([\w?.!()\- ]*)[\n\s]*/gm;
+  const secondPass = initialPass.replace(secondayWhitespaceRemovalPattern, '>$1');
+  return secondPass.trim();
+}
+
+function simpleSvgMinification(svgMarkup) {
+  const newlineRemovalPattern = />\s*</gm;
+  return svgMarkup.replace(newlineRemovalPattern, '><').trim();
+}
+```

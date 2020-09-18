@@ -1,0 +1,141 @@
+<div class="rsCapeCustomizer_capePicker">
+  <div class="rsCapeCustomizer_capePickerContent">
+    <fieldset class="rsCapeCustomizer_capePickerFs rsCapeCustomizer_fs">
+      <legend class="rsCapeCustomizer_legend">Cape Type</legend>
+      <div class="rsCapeCustomizer_inputsWrapper">
+        <div class="rsCapeCustomizer_inputLabelWrapper">
+          <label class="rsCapeCustomizer_label" for="input-max">Max</label>
+          <input type="radio" id="input-max" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="max" checked>
+        </div>
+        <div class="rsCapeCustomizer_inputLabelWrapper">
+          <label class="rsCapeCustomizer_label" for="input-comp">Comp</label>
+          <input type="radio" id="input-comp" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="comp">
+        </div>
+        <div class="rsCapeCustomizer_inputLabelWrapper">
+          <label class="rsCapeCustomizer_label" for="input-comp-t">Comp (t)</label>
+          <input type="radio" id="input-comp-t" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="compTrim">
+        </div>
+      </div>
+    </fieldset>
+    <div class="rsCapeCustomizer_capeEditor">
+      <div id="cape-svg-wrapper" class="rsCapeCustomizer_capeWrapper">
+        <div id="cape-background" class="rsCapeCustomizer_capeBackground"></div>
+      </div>
+      <div class="rsCapeCustomizer_colorPicker">
+        <fieldset class="rsCapeCustomizer_fs">
+          <legend class="rsCapeCustomizer_legend">
+            <span class="rsCapeCustomizer_legendText">Input Mode</span>
+          </legend>
+          <div class="rsCapeCustomizer_inputsWrapper">
+            <div class="rsCapeCustomizer_inputLabelWrapper">
+              <label for="input-hsl" class="rsCapeCustomizer_label">HSL</label>
+              <input type="radio" id="input-hsl" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio" checked>
+            </div>
+            <div class="rsCapeCustomizer_inputLabelWrapper">
+              <label for="input-hex" class="rsCapeCustomizer_label">Hex</label>
+              <input type="radio" id="input-hex" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio">
+            </div>
+            <div class="rsCapeCustomizer_inputLabelWrapper">
+              <label for="input-rgb" class="rsCapeCustomizer_label">RGB</label>
+              <input type="radio" id="input-rgb" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="rsCapeCustomizer_fs">
+          <legend class="rsCapeCustomizer_legend">
+            <span class="rsCapeCustomizer_legendText">Choose Colors</span>
+          </legend>
+          <div class="rsCapeCustomizer_colorInputWrapper">
+            <label id="detailTop-label" for="detailTop" class="rsCapeCustomizer_colorInputLabel">Detail Top</label>
+            <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span>
+            <input type="text" id="detailTop" class="rsCapeCustomizer_colorInputTextInput">
+            <span class="rsCapeCustomizer_colorInputPostfix">)</span>
+            <p class="rsCapeCustomizer_colorInputErrorMessage"></p>
+          </div>
+          <div class="rsCapeCustomizer_colorInputWrapper">
+            <label id="detailBot-label" for="detailBot" class="rsCapeCustomizer_colorInputLabel">Detail Bottom</label>
+            <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span>
+            <input type="text" id="detailBot" class="rsCapeCustomizer_colorInputTextInput">
+            <span class="rsCapeCustomizer_colorInputPostfix">)</span>
+            <p class="rsCapeCustomizer_colorInputErrorMessage"></p>
+          </div>
+          <div class="rsCapeCustomizer_colorInputWrapper">
+            <label id="bgTop-label" for="bgTop" class="rsCapeCustomizer_colorInputLabel">Background Top</label>
+            <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span>
+            <input type="text" id="bgTop" class="rsCapeCustomizer_colorInputTextInput">
+            <span class="rsCapeCustomizer_colorInputPostfix">)</span>
+            <p class="rsCapeCustomizer_colorInputErrorMessage"></p>
+          </div>
+          <div class="rsCapeCustomizer_colorInputWrapper">
+            <label id="bgBot-label" for="bgBot" class="rsCapeCustomizer_colorInputLabel">Background Bottom</label>
+            <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span>
+            <input type="text" id="bgBot" class="rsCapeCustomizer_colorInputTextInput">
+            <span class="rsCapeCustomizer_colorInputPostfix">)</span>
+            <p class="rsCapeCustomizer_colorInputErrorMessage"></p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="rsCapeCustomizer_colorOutputColorOutput">
+        <h3 class="rsCapeCustomizer_colorOutputHeader">
+          <span class="rsCapeCustomizer_colorOutputHeaderText">Use These Colors</span>
+        </h3>
+        <div class="rsCapeCustomizer_colorOutputGroup">
+          <h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Top</h5>
+          <div class="rsCapeCustomizer_colorOutputValuesWrapper">
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              H: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              S: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              L: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+          </div>
+        </div>
+        <div class="rsCapeCustomizer_colorOutputGroup">
+          <h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Bottom</h5>
+          <div class="rsCapeCustomizer_colorOutputValuesWrapper">
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              H: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              S: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              L: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+          </div>
+        </div>
+        <div class="rsCapeCustomizer_colorOutputGroup">
+          <h5 class="rsCapeCustomizer_colorOutputSubhead">Background Top</h5>
+          <div class="rsCapeCustomizer_colorOutputValuesWrapper">
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              H: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              S: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              L: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+          </div>
+        </div>
+        <div class="rsCapeCustomizer_colorOutputGroup">
+          <h5 class="rsCapeCustomizer_colorOutputSubhead">Background Bottom</h5>
+          <div class="rsCapeCustomizer_colorOutputValuesWrapper">
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              H: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              S: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+            <p class="rsCapeCustomizer_colorOutputLabel">
+              L: <span class="rsCapeCustomizer_colorOutputValue"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
