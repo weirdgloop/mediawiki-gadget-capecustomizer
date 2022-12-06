@@ -23,7 +23,9 @@ If you don’t want run a process to continually update the build file every tim
 
 For performance purposes, we include minified HTML in the JS file, but such markup can be difficult to modify if necessary.
 
-For this reason, prettified HTML is available in the templates folder. This can be minified using the functions below in your browser console when it is ready to be updated in the JS file.
+For this reason, prettified HTML is available in the templates folder. This ca be minified using the `gulp-htmlmin` package by runing `gulp minify` which minifies all `.html` and `.svg` files in the templates folder and places them in `build/mini`. Simply copy the contents of the corresponding file to the correct location in `dev.js`.
+
+Alternatively they can be minified using the functions below in your browser console when it is ready.
 
 ```
 // minification is good enough for our purposes here; probably not a flawless solution

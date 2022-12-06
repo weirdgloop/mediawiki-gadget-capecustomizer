@@ -2,7 +2,15 @@
   <div class="rsCapeCustomizer_capePickerContent">
     <fieldset class="rsCapeCustomizer_capePickerFs rsCapeCustomizer_fs">
       <legend class="rsCapeCustomizer_legend">Cape Type</legend>
-      <div class="rsCapeCustomizer_inputsWrapper">
+      <select id="rsCapeCustomizer_capeTypeSelect" name="cape-selector" class="rsCapeCustomizer_select">
+        <option value="max" selected>Max cape</option>
+        <option value="comp">Comp cape</option>
+        <option value="compTrim">Comp (t) cape</option>
+        <option value="masterMax">Master max cape</option>
+        <option value="masterComp">Master comp cape</option>
+        <option value="masterCompTrim">Master comp (t) cape</option>
+      </select>
+      <div class="rsCapeCustomizer_inputsWrapper" style="display:none;">
         <div class="rsCapeCustomizer_inputLabelWrapper">
           <label class="rsCapeCustomizer_label" for="input-max">Max</label>
           <input type="radio" id="input-max" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="max" checked>
@@ -40,6 +48,44 @@
               <input type="radio" id="input-rgb" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio">
             </div>
           </div>
+        </fieldset>
+        <fieldset class="rsCapeCustomizer_fs">
+          <legend class="rsCapeCustomizer_legend">
+            <span class="rsCapeCustomizer_legendText">Presets</span>
+          </legend>
+          <select id="rsCapeCustomizer_presetSelect" name="preset-selector" class="rsCapeCustomizer_select">
+            <option value="custom">custom</option>
+            <option value="default" selected>default</option>
+            <option value="mod chris l">mod chris l</option>
+            <option value="mod ryan">mod ryan</option>
+            <option value="mod ramen">mod ramen</option>
+            <option value="shooting star">shooting star</option>
+            <option value="wiki">wiki</option>
+            <option value="mod stacey">mod stacey</option>
+            <option value="clover">clover</option>
+            <option value="mod shrike">mod shrike</option>
+            <option value="mod iago">mod iago</option>
+            <option value="johnna">johnna</option>
+            <option value="mod helen">mod helen</option>
+            <option value="mod shogun">mod shogun</option>
+            <option value="mod blkwitch">mod blkwitch</option>
+            <option value="mod shutty">mod shutty</option>
+            <option value="mod luma">mod luma</option>
+            <option value="bisexual">bisexual</option>
+            <option value="pansexual">pansexual</option>
+            <option value="asexual">asexual</option>
+            <option value="lesbian">lesbian</option>
+            <option value="intersex">intersex</option>
+            <option value="transgender">transgender</option>
+            <option value="nonbinary">nonbinary</option>
+            <option value="genderfluid">genderfluid</option>
+            <option value="agender">agender</option>
+            <option value="ashoka">ashoka</option>
+            <option value="trashcan">trashcan</option>
+            <option value="mod easty">mod easty</option>
+            <option value="sailing">sailing</option>
+            <option value="mod dragon">mod dragon</option>
+          </select>
         </fieldset>
         <fieldset class="rsCapeCustomizer_fs">
           <legend class="rsCapeCustomizer_legend">
