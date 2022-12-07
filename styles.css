@@ -27,10 +27,26 @@
   z-index: -1;
   width: 100%;
   height: 160px;
-  background-image: url('https://runescape.wiki/images/5/51/Max_cape_detail.png');
+  /* background-image: url('https://runescape.wiki/images/5/51/Max_cape_detail.png'); */
   background-size: 234px auto;
   background-position: top;
   background-repeat: no-repeat;
+}
+.rsCapeCustomizer_maxCapeBackground {
+  background-image: url('filepath://Cape-customizer-max-cape-bg.png');
+}
+.rsCapeCustomizer_compCapeBackground,
+.rsCapeCustomizer_compTrimCapeBackground{
+  background-image: url('filepath://Cape-customizer-comp-cape-bg.png');
+}
+.rsCapeCustomizer_masterMaxCapeBackground {
+  top: 0;
+  background-image: url('filepath://Cape-customizer-master-max-cape-bg.png');
+}
+.rsCapeCustomizer_masterCompCapeBackground,
+.rsCapeCustomizer_masterCompTrimCapeBackground {
+  top: 0;
+  background-image: url('filepath://Cape-customizer-master-comp-cape-t-bg.png');
 }
 .rsCapeCustomizer_colorPicker {
   width: 340px;
