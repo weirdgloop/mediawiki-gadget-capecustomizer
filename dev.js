@@ -108,7 +108,7 @@ const hueRSMax = 63;
 const saturationOriginalMax = 100;
 const saturationRSMax = 7;
 const luminosityOriginalMax = 100;
-const luminosityRSMax = 127;
+const luminosityRSMax = 170;
 const elementCache = {};
 let debounceTimer = null;
 
