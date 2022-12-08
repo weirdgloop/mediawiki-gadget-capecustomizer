@@ -109,6 +109,7 @@ const saturationOriginalMax = 100;
 const saturationRSMax = 7;
 const luminosityOriginalMax = 100;
 const luminosityRSMax = 170;
+const luminosityRSCap = 127;
 const elementCache = {};
 let debounceTimer = null;
 
@@ -149,7 +150,7 @@ function getSaturation(hslString) {
 
 function getLuminosity(hslString) {
   const numbers = getNumbersFromHslString(hslString).split(',');
-  return roundToMultiple(numbers[2].trim(), luminosityOriginalMax, luminosityRSMax);
+  return Math.min(luminosityRSCap, roundToMultiple(numbers[2].trim(), luminosityOriginalMax, luminosityRSMax));
 }
 
 function setCapeSegmentCache() {
@@ -389,7 +390,6 @@ function handlePresetSelect(event) {
   currentConfig.preset = value;
   if (presetColors[value]) {
     presetColors[value].forEach((hex,i) => {
-      // syncTextInput({value:hex}, i);
       let convertedValue;
       if (mode === 'hsl') {
         convertedValue = getNumbersFromColorString(tinycolor(hex).toHslString());
