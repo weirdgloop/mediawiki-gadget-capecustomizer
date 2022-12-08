@@ -1,4 +1,4 @@
-const appMarkup = '<div class="rsCapeCustomizer_capePicker"><div class="rsCapeCustomizer_capePickerContent"><fieldset class="rsCapeCustomizer_capePickerFs rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend">Cape Type</legend><select id="rsCapeCustomizer_capeTypeSelect" name="cape-selector" class="rsCapeCustomizer_select"><option value="max" selected="selected">Max cape</option><option value="comp">Comp cape</option><option value="compTrim">Comp (t) cape</option><option value="masterMax">Master max cape</option><option value="masterComp">Master comp cape</option><option value="masterCompTrim">Master comp (t) cape</option></select><div class="rsCapeCustomizer_inputsWrapper" style="display:none;"><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-max">Max</label> <input type="radio" id="input-max" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="max" checked="checked"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-comp">Comp</label> <input type="radio" id="input-comp" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="comp"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-comp-t">Comp (t)</label> <input type="radio" id="input-comp-t" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="compTrim"></div></div></fieldset><div class="rsCapeCustomizer_capeEditor"><div id="cape-svg-wrapper" class="rsCapeCustomizer_capeWrapper"><div id="cape-background" class="rsCapeCustomizer_capeBackground"></div></div><div class="rsCapeCustomizer_colorPicker"><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Input Mode</span></legend><div class="rsCapeCustomizer_inputsWrapper"><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-hsl" class="rsCapeCustomizer_label">HSL</label> <input type="radio" id="input-hsl" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio" checked="checked"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-hex" class="rsCapeCustomizer_label">Hex</label> <input type="radio" id="input-hex" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-rgb" class="rsCapeCustomizer_label">RGB</label> <input type="radio" id="input-rgb" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio"></div></div></fieldset><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Presets</span></legend><select id="rsCapeCustomizer_presetSelect" name="preset-selector" class="rsCapeCustomizer_select"><option value="custom">custom</option><option value="default" selected="selected">default</option><option value="mod chris l">mod chris l</option><option value="mod ryan">mod ryan</option><option value="mod ramen">mod ramen</option><option value="shooting star">shooting star</option><option value="wiki">wiki</option><option value="mod stacey">mod stacey</option><option value="clover">clover</option><option value="mod shrike">mod shrike</option><option value="mod iago">mod iago</option><option value="johnna">johnna</option><option value="mod helen">mod helen</option><option value="mod shogun">mod shogun</option><option value="mod blkwitch">mod blkwitch</option><option value="mod shutty">mod shutty</option><option value="mod luma">mod luma</option><option value="bisexual">bisexual</option><option value="pansexual">pansexual</option><option value="asexual">asexual</option><option value="lesbian">lesbian</option><option value="intersex">intersex</option><option value="transgender">transgender</option><option value="nonbinary">nonbinary</option><option value="genderfluid">genderfluid</option><option value="agender">agender</option><option value="ashoka">ashoka</option><option value="trashcan">trashcan</option><option value="mod easty">mod easty</option><option value="sailing">sailing</option><option value="mod dragon">mod dragon</option></select></fieldset><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Choose Colors</span></legend><div class="rsCapeCustomizer_colorInputWrapper"><label id="detailTop-label" for="detailTop" class="rsCapeCustomizer_colorInputLabel">Detail Top</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="detailTop" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="detailBot-label" for="detailBot" class="rsCapeCustomizer_colorInputLabel">Detail Bottom</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="detailBot" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="bgTop-label" for="bgTop" class="rsCapeCustomizer_colorInputLabel">Background Top</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="bgTop" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="bgBot-label" for="bgBot" class="rsCapeCustomizer_colorInputLabel">Background Bottom</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="bgBot" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div></fieldset></div><div class="rsCapeCustomizer_colorOutputColorOutput"><h3 class="rsCapeCustomizer_colorOutputHeader"><span class="rsCapeCustomizer_colorOutputHeaderText">Use These Colors</span></h3><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Top</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Bottom</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Background Top</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Background Bottom</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div></div></div></div></div>';
+const appMarkup = '<div class="rsCapeCustomizer_capePicker"><div class="rsCapeCustomizer_capePickerContent"><fieldset class="rsCapeCustomizer_capePickerFs rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend">Cape Type</legend><select id="rsCapeCustomizer_capeTypeSelect" name="cape-selector" class="rsCapeCustomizer_select"><option value="max" selected="selected">Max cape</option><option value="comp">Comp cape</option><option value="compTrim">Comp (t) cape</option><option value="masterMax">Master max cape</option><option value="masterComp">Master comp cape</option><option value="masterCompTrim">Master comp (t) cape</option></select><div class="rsCapeCustomizer_inputsWrapper" style="display:none;"><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-max">Max</label> <input type="radio" id="input-max" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="max" checked="checked"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-comp">Comp</label> <input type="radio" id="input-comp" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="comp"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label class="rsCapeCustomizer_label" for="input-comp-t">Comp (t)</label> <input type="radio" id="input-comp-t" name="capeTypeToggler" class="rsCapeCustomizer_radio rsCapeCustomizer_capeTypeRadio" value="compTrim"></div></div></fieldset><div class="rsCapeCustomizer_capeEditor"><div id="cape-svg-wrapper" class="rsCapeCustomizer_capeWrapper"><div id="cape-background" class="rsCapeCustomizer_capeBackground"></div></div><div class="rsCapeCustomizer_colorPicker"><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Input Mode</span></legend><div class="rsCapeCustomizer_inputsWrapper"><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-hsl" class="rsCapeCustomizer_label">HSL</label> <input type="radio" id="input-hsl" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio" checked="checked"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-hex" class="rsCapeCustomizer_label">Hex</label> <input type="radio" id="input-hex" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-rgb" class="rsCapeCustomizer_label">RGB</label> <input type="radio" id="input-rgb" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio"></div><div class="rsCapeCustomizer_inputLabelWrapper"><label for="input-rhsl" class="rsCapeCustomizer_label">RS HSL</label> <input type="radio" id="input-rhsl" name="mode" class="rsCapeCustomizer_radio rsCapeCustomizer_colorPickerRadio"></div></div></fieldset><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Presets</span></legend><select id="rsCapeCustomizer_presetSelect" name="preset-selector" class="rsCapeCustomizer_select"><option value="custom" selected="selected">custom</option><option value="default">default</option><option value="mod chris l">mod chris l</option><option value="mod ryan">mod ryan</option><option value="mod ramen">mod ramen</option><option value="shooting star">shooting star</option><option value="wiki">wiki</option><option value="mod stacey">mod stacey</option><option value="clover">clover</option><option value="mod shrike">mod shrike</option><option value="mod iago">mod iago</option><option value="johnna">johnna</option><option value="mod helen">mod helen</option><option value="mod shogun">mod shogun</option><option value="mod blkwitch">mod blkwitch</option><option value="mod shutty">mod shutty</option><option value="mod luma">mod luma</option><option value="bisexual">bisexual</option><option value="pansexual">pansexual</option><option value="asexual">asexual</option><option value="lesbian">lesbian</option><option value="intersex">intersex</option><option value="transgender">transgender</option><option value="nonbinary">nonbinary</option><option value="genderfluid">genderfluid</option><option value="agender">agender</option><option value="ashoka">ashoka</option><option value="trashcan">trashcan</option><option value="mod easty">mod easty</option><option value="sailing">sailing</option><option value="mod dragon">mod dragon</option></select></fieldset><fieldset class="rsCapeCustomizer_fs"><legend class="rsCapeCustomizer_legend"><span class="rsCapeCustomizer_legendText">Choose Colors</span></legend><div class="rsCapeCustomizer_colorInputWrapper"><label id="detailTop-label" for="detailTop" class="rsCapeCustomizer_colorInputLabel">Detail Top</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="detailTop" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="detailBot-label" for="detailBot" class="rsCapeCustomizer_colorInputLabel">Detail Bottom</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="detailBot" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="bgTop-label" for="bgTop" class="rsCapeCustomizer_colorInputLabel">Background Top</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="bgTop" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div><div class="rsCapeCustomizer_colorInputWrapper"><label id="bgBot-label" for="bgBot" class="rsCapeCustomizer_colorInputLabel">Background Bottom</label> <span class="rsCapeCustomizer_colorInputPrefix">hsl(</span> <input type="text" id="bgBot" class="rsCapeCustomizer_colorInputTextInput"> <span class="rsCapeCustomizer_colorInputPostfix">)</span><p class="rsCapeCustomizer_colorInputErrorMessage"></p></div></fieldset></div><div class="rsCapeCustomizer_colorOutputColorOutput"><h3 class="rsCapeCustomizer_colorOutputHeader"><span class="rsCapeCustomizer_colorOutputHeaderText">Use These Colors</span></h3><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Top</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Detail Bottom</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Background Top</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div><div class="rsCapeCustomizer_colorOutputGroup"><h5 class="rsCapeCustomizer_colorOutputSubhead">Background Bottom</h5><div class="rsCapeCustomizer_colorOutputValuesWrapper"><p class="rsCapeCustomizer_colorOutputLabel">H: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">S: <span class="rsCapeCustomizer_colorOutputValue"></span></p><p class="rsCapeCustomizer_colorOutputLabel">L: <span class="rsCapeCustomizer_colorOutputValue"></span></p></div></div></div></div></div></div>';
 
 const colorInputMarkup = [
   '<input id="detailTop-picker" type="color" class="rsCapeCustomizer_colorInputColorPicker" aria-labelledby="detailTop-label">',
@@ -45,8 +45,35 @@ const pathCss = {
 
 const presetColors = {
   // Arrays of hex colors: [ detailTop, detailBot, bgTop, bgBot ]
-  default: ['#9e0000', '#f8b044', '#751f1f', '#ffe866'],
-  ['mod chris l']: ['#000', '#000', '#000', '#000'],
+  default: ['(63,5,62)', '(63,5,48)', '(63,5,34)', '(61,4,19)'],
+  ['mod chris l']: ['(63,7,22)', '(6,4,74)', '(26,3,69)', '(63,7,22)'],
+  ['mod ryan']: ['(63,0,16)', '(63,0,14)', '(63,0,24)', '(63,0,16)'],
+  ['mod ramen']: ['(52,2,11)', '(52,2,16)', '(63,6,44)', '(63,6,26)'],
+  ['shooting star']: ['(10,5,95)', '(19,5,78)', '(45,7,34)', '(45,3,32)'],
+  ['wiki']: ['(36,3,78)', '(36,1,110)', '(35,6,37)', '(35,3,61)'],
+  ['mod stacey']: ['(48,5,9)', '(63,0,0)', '(63,0,0)', '(48,5,9)'],
+  ['clover']: ['(5,1,108)', '(5,1,120)', '(6,2,110)', '(6,2,100)'],
+  ['mod shrike']: ['(1,7,41)', '(48,0,66)', '(3,1,92)', '(0,0,1)'],
+  ['mod iago']: ['(39,0,54)', '(39,0,36)', '(39,0,15)', '(39,0,21)'],
+  ['johnna']: ['(0,1,125)', '(0,1,117)', '(0,1,97)', '(0,1,104)'],
+  ['mod helen']: ['(10,6,126)', '(42,7,78)', '(42,7,78)', '(10,6,126)'],
+  ['mod shogun']: ['(10,0,0)', '(0,7,86)', '(10,0,0)', '(0,7,39)'],
+  ['mod blkwitch']: ['(0,1,6)', '(60,4,10)', '(63,7,16)', '(48,0,7)'],
+  ['mod shutty']: ['(27,6,29)', '(37,2,97)', '(32,7,16)', '(37,7,1)'],
+  ['mod luma']: ['(10,5,95)', '(19,5,78)', '(45,7,34)', '(45,3,32)'],
+  ['bisexual']: ['(58,7,53)', '(54,2,57)', '(39,7,43)', '(58,7,53)'],
+  ['pansexual']: ['(58,7,70)', '(8,7,64)', '(40,7,105)', '(40,7,105)'],
+  ['asexual']: ['(0,0,1)', '(0,0,37)', '(0,0,127)', '(53,7,33)'],
+  ['lesbian']: ['(2,7,53)', '(4,7,84)', '(0,0,127)', '(57,4,78)'],
+  ['intersex']: ['(9,7,64)', '(50,7,43)', '(50,7,43)', '(9,7,64)'],
+  ['transgender']: ['(35,7,86)', '(61,1,105)', '(0,0,127)', '(61,1,105)'],
+  ['nonbinary']: ['(10,7,76)', '(0,0,127)', '(48,4,76)', '(0,0,20)'],
+  ['genderfluid']: ['(0,0,127)', '(52,6,57)', '(0,0,1)', '(42,4,57)'],
+  ['agender']: ['(0,0,1)', '(0,0,37)', '(16,3,94)', '(0,0,127)'],
+  ['trashcan']: ['(58,0,13)', '(13,2,40)', '(58,0,13)', '(1,0,0)'],
+  ['mod easty']: ['(6,5,16)', '(35,7,105)', '(8,4,39)', '(9,7,16)'],
+  ['sailing']: ['(1,6,47)', '(0,0,115)', '(7,5,26)', '(38,7,47)'],
+  ['mod dragon']: ['(47,7,4)', '(46,7,23)', '(2,7,59)', '(47,7,3)'],
 };
 
 const DEFAULT_SETTINGS = {
@@ -91,6 +118,7 @@ const errorMessages = [
   'Invalid input. Use format 0, 0%, 0%.',
   'Invalid input. Use format 000000.',
   'Invalid input. Use format 0, 0, 0.',
+  'Invalid input. Use format 0, 0, 0.',
 ];
 
 const currentConfig = {
@@ -113,8 +141,8 @@ const luminosityRSCap = 127;
 const elementCache = {};
 let debounceTimer = null;
 
-function roundToMultiple(input, originalMax, RSMax) {
-  return Math.round(parseInt(input) / (originalMax / RSMax));
+function roundToMultiple(input, originalMax, newMax) {
+  return Math.round(parseInt(input) / (originalMax / newMax));
 }
 
 function getNumbersFromColorString(string) {
@@ -132,24 +160,40 @@ function formatRawColorValue(string, mode) {
   if (mode === 'hsl') {
     return `hsl(${string})`;
   }
+  if (mode === 'rhsl') {
+    return `rhsl(${string})`;
+  }
   if (mode === 'hex') {
     return `#${string}`;
   }
   return `rgb(${string})`;
 }
 
-function getHue(hslString) {
+function getHue(hslString, fromRS) {
   const numbers = getNumbersFromHslString(hslString).split(',');
+  if (fromRS) {
+    const hue = roundToMultiple(numbers[0], hueRSMax, hueOriginalMax);
+    if (hue == 360) { return 359; }
+    return hue;
+  }
   return roundToMultiple(numbers[0], hueOriginalMax, hueRSMax);
 }
 
-function getSaturation(hslString) {
+function getSaturation(hslString, fromRS) {
   const numbers = getNumbersFromHslString(hslString).split(',');
+  if (fromRS) {
+    return roundToMultiple(numbers[1].trim(), saturationRSMax, saturationOriginalMax);
+  }
   return roundToMultiple(numbers[1].trim(), saturationOriginalMax, saturationRSMax);
 }
 
-function getLuminosity(hslString) {
+function getLuminosity(hslString, fromRS) {
   const numbers = getNumbersFromHslString(hslString).split(',');
+  if (fromRS && numbers[2].trim() == luminosityRSCap) {
+    return 100;
+  } else if (fromRS) {
+    return roundToMultiple(numbers[2].trim(), luminosityRSMax, luminosityOriginalMax);
+  }
   return Math.min(luminosityRSCap, roundToMultiple(numbers[2].trim(), luminosityOriginalMax, luminosityRSMax));
 }
 
@@ -227,10 +271,13 @@ function updateErrorText(index, add) {
       errors.push(index);
     }
     const isHsl = mode === 'hsl';
+    const isRHsl = mode === 'rhsl';
     const isHex = mode === 'hex';
     let errorMessageIndex;
     if (isHsl) {
       errorMessageIndex = 0;
+    } else if (isRHsl) {
+      errorMessageIndex = 3;
     } else if (isHex) {
       errorMessageIndex = 1;
     } else { // mode === 'rgb'
@@ -290,6 +337,9 @@ function syncTextInput(target, index) {
   let convertedValue;
   if (mode === 'hsl') {
     convertedValue = getNumbersFromColorString(tinycolor(originalValue).toHslString());
+  } else if (mode === 'rhsl') {
+    const hslStr = getNumbersFromColorString(tinycolor(originalValue).toHslString());
+    convertedValue = getHue(hslStr) + ', ' + getSaturation(hslStr) + ', ' + getLuminosity(hslStr);
   } else if (mode === 'hex') {
     convertedValue = getNumbersFromColorString(originalValue);
   } else {
@@ -301,13 +351,19 @@ function syncTextInput(target, index) {
 }
 
 function handleModeChange(mode) {
-  const oldMode = currentConfig.mode;
+  let oldMode = currentConfig.mode;
   const { colorInputs, modePrefixes, modePostfixes } = elementCache;
   const isHsl = mode === 'hsl';
+  const isRHsl = mode === 'rhsl';
   const isHex = mode === 'hex';
   currentConfig.mode = mode;
   for (let i = 0, l = colorInputs.length; i < l; i += 1) {
-    const thisValue = colorInputs[i].value;
+    let thisValue = colorInputs[i].value;
+    if (oldMode == 'rhsl') {
+      thisValue = '(' + thisValue + ')';
+      thisValue = getHue(thisValue,true) + ', ' + getSaturation(thisValue,true) + '%, ' + getLuminosity(thisValue,true);
+      oldMode = 'hsl';
+    }
     const oldValueFormatted = formatRawColorValue(thisValue, oldMode);
     const newValueFormatted = formatRawColorValue(thisValue, mode);
     const tcOldColor = tinycolor(oldValueFormatted);
@@ -322,6 +378,9 @@ function handleModeChange(mode) {
     } else if (oldValueIsValid) {
       if (isHsl) {
         convertedColor = getNumbersFromColorString(tinycolor(oldValueFormatted).toHslString());
+      } else if (isRHsl) {
+        const hslStr = tinycolor(oldValueFormatted).toHslString();
+        convertedColor = getHue(hslStr) + ', ' + getSaturation(hslStr) + ', ' + getLuminosity(hslStr);
       } else if (isHex) {
         convertedColor = tinycolor(oldValueFormatted).toHex();
       } else { // mode === 'rgb'
@@ -339,6 +398,9 @@ function handleModeChange(mode) {
     let postfix;
     if (isHsl) {
       modeText = 'hsl(';
+      postfix = ')';
+    } else if (isRHsl) {
+      modeText = 'rhsl(';
       postfix = ')';
     } else if (isHex) {
       modeText = '#';
@@ -389,17 +451,20 @@ function handlePresetSelect(event) {
   const { colorInputs } = elementCache;
   currentConfig.preset = value;
   if (presetColors[value]) {
-    presetColors[value].forEach((hex,i) => {
+    presetColors[value].forEach((rhsl,i) => {
+      const hsl = 'hsl(' + getHue(rhsl,true) + ', ' + getSaturation(rhsl,true) + '%, ' + getLuminosity(rhsl,true) + '%)'
       let convertedValue;
       if (mode === 'hsl') {
-        convertedValue = getNumbersFromColorString(tinycolor(hex).toHslString());
+        convertedValue = getNumbersFromColorString(tinycolor(hsl).toHslString());
+      } else if (mode === 'rhsl') {
+        convertedValue = getNumbersFromColorString(rhsl);
       } else if (mode === 'hex') {
-        convertedValue = getNumbersFromColorString(hex);
+        convertedValue = tinycolor(hsl).toHex();
       } else {
-        convertedValue = getNumbersFromColorString(tinycolor(hex).toRgbString());
+        convertedValue = getNumbersFromColorString(tinycolor(hsl).toRgbString());
       }
       colorInputs[i].value = convertedValue;
-      updateColors(convertedValue, i);
+      updateColors(hsl, i);
     });
   }
 }
