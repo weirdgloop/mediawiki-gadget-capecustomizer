@@ -17,6 +17,7 @@
       "import/extensions": "off",
       "operator-linebreak": "off",
       "no-multiple-empty-lines": ["error", { "max": 2 }],
-      "radix": "off"
+      "radix": "off",
+      "linebreak-style": "off"
     }
 }

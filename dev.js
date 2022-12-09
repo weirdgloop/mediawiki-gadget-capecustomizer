@@ -325,7 +325,14 @@ function updateColors(value, index) {
 
   const newSegments = capeSegmentData.slice();
   const matchingSegment = newSegments[index];
-  matchingSegment.color = tcNewColor.toHslString(); // always send hsl values to SVG for simplicity;
+  /**
+   * Always send hsl values to SVG for simplicity.
+   *
+   * We specifically *do not* call toHslString() on newColor if mode is already HSL
+   * because tinycolor will convert H value to 0 if S value is 0,
+   * which will screw up our final value for in-game use.
+   */
+  matchingSegment.color = mode === 'hsl' ? newColor : tcNewColor.toHslString();
 
   setColors(newSegments);
   syncColorInput(tcNewColor.toHexString(), index);
@@ -355,7 +362,7 @@ function syncTextInput(target, index) {
 }
 
 function handleModeChange(mode) {
-  const oldMode = currentConfig.mode;
+  const { capeSegmentData, mode: oldMode } = currentConfig;
   const { colorInputs, modePrefixes, modePostfixes } = elementCache;
   const isHsl = mode === 'hsl';
   const isRHsl = mode === 'rhsl';
@@ -376,7 +383,10 @@ function handleModeChange(mode) {
       updateColors(convertedColor, i);
     } else if (oldValueIsValid) {
       if (isHsl) {
-        convertedColor = getNumbersFromColorString(tinycolor(oldValueFormatted).toHslString());
+        const newValue = mode === 'hsl'
+          ? capeSegmentData[i].color
+          : tinycolor(oldValueFormatted).toHslString();
+        convertedColor = getNumbersFromColorString(newValue);
       } else if (isRHsl) {
         const hslStr = tinycolor(oldValueFormatted).toHslString();
         convertedColor = getHue(hslStr) + ', ' + getSaturation(hslStr) + ', ' + getLuminosity(hslStr);
