@@ -45,35 +45,35 @@ const pathCss = {
 
 const presetColors = {
   // Arrays of hex colors: [ detailTop, detailBot, bgTop, bgBot ]
-  default: ['(63,5,62)', '(63,5,48)', '(63,5,34)', '(61,4,19)'],
-  ['mod chris l']: ['(63,7,22)', '(6,4,74)', '(26,3,69)', '(63,7,22)'],
-  ['mod ryan']: ['(63,0,16)', '(63,0,14)', '(63,0,24)', '(63,0,16)'],
-  ['mod ramen']: ['(52,2,11)', '(52,2,16)', '(63,6,44)', '(63,6,26)'],
-  ['shooting star']: ['(10,5,95)', '(19,5,78)', '(45,7,34)', '(45,3,32)'],
-  ['wiki']: ['(36,3,78)', '(36,1,110)', '(35,6,37)', '(35,3,61)'],
-  ['mod stacey']: ['(48,5,9)', '(63,0,0)', '(63,0,0)', '(48,5,9)'],
-  ['clover']: ['(5,1,108)', '(5,1,120)', '(6,2,110)', '(6,2,100)'],
-  ['mod shrike']: ['(1,7,41)', '(48,0,66)', '(3,1,92)', '(0,0,1)'],
-  ['mod iago']: ['(39,0,54)', '(39,0,36)', '(39,0,15)', '(39,0,21)'],
-  ['johnna']: ['(0,1,125)', '(0,1,117)', '(0,1,97)', '(0,1,104)'],
-  ['mod helen']: ['(10,6,126)', '(42,7,78)', '(42,7,78)', '(10,6,126)'],
-  ['mod shogun']: ['(10,0,0)', '(0,7,86)', '(10,0,0)', '(0,7,39)'],
-  ['mod blkwitch']: ['(0,1,6)', '(60,4,10)', '(63,7,16)', '(48,0,7)'],
-  ['mod shutty']: ['(27,6,29)', '(37,2,97)', '(32,7,16)', '(37,7,1)'],
-  ['mod luma']: ['(10,5,95)', '(19,5,78)', '(45,7,34)', '(45,3,32)'],
-  ['bisexual']: ['(58,7,53)', '(54,2,57)', '(39,7,43)', '(58,7,53)'],
-  ['pansexual']: ['(58,7,70)', '(8,7,64)', '(40,7,105)', '(40,7,105)'],
-  ['asexual']: ['(0,0,1)', '(0,0,37)', '(0,0,127)', '(53,7,33)'],
-  ['lesbian']: ['(2,7,53)', '(4,7,84)', '(0,0,127)', '(57,4,78)'],
-  ['intersex']: ['(9,7,64)', '(50,7,43)', '(50,7,43)', '(9,7,64)'],
-  ['transgender']: ['(35,7,86)', '(61,1,105)', '(0,0,127)', '(61,1,105)'],
-  ['nonbinary']: ['(10,7,76)', '(0,0,127)', '(48,4,76)', '(0,0,20)'],
-  ['genderfluid']: ['(0,0,127)', '(52,6,57)', '(0,0,1)', '(42,4,57)'],
-  ['agender']: ['(0,0,1)', '(0,0,37)', '(16,3,94)', '(0,0,127)'],
-  ['trashcan']: ['(58,0,13)', '(13,2,40)', '(58,0,13)', '(1,0,0)'],
-  ['mod easty']: ['(6,5,16)', '(35,7,105)', '(8,4,39)', '(9,7,16)'],
-  ['sailing']: ['(1,6,47)', '(0,0,115)', '(7,5,26)', '(38,7,47)'],
-  ['mod dragon']: ['(47,7,4)', '(46,7,23)', '(2,7,59)', '(47,7,3)'],
+  default: ['63,5,62', '63,5,48', '63,5,34', '61,4,19'],
+  ['mod chris l']: ['63,7,22', '6,4,74', '26,3,69', '63,7,22'],
+  ['mod ryan']: ['63,0,16', '63,0,14', '63,0,24', '63,0,16'],
+  ['mod ramen']: ['52,2,11', '52,2,16', '63,6,44', '63,6,26'],
+  ['shooting star']: ['10,5,95', '19,5,78', '45,7,34', '45,3,32'],
+  ['wiki']: ['36,3,78', '36,1,110', '35,6,37', '35,3,61'],
+  ['mod stacey']: ['48,5,9', '63,0,0', '63,0,0', '48,5,9'],
+  ['clover']: ['5,1,108', '5,1,120', '6,2,110', '6,2,100'],
+  ['mod shrike']: ['1,7,41', '48,0,66', '3,1,92', '0,0,1'],
+  ['mod iago']: ['39,0,54', '39,0,36', '39,0,15', '39,0,21'],
+  ['johnna']: ['0,1,125', '0,1,117', '0,1,97', '0,1,104'],
+  ['mod helen']: ['10,6,126', '42,7,78', '42,7,78', '10,6,126'],
+  ['mod shogun']: ['10,0,0', '0,7,86', '10,0,0', '0,7,39'],
+  ['mod blkwitch']: ['0,1,6', '60,4,10', '63,7,16', '48,0,7'],
+  ['mod shutty']: ['27,6,29', '37,2,97', '32,7,16', '37,7,1'],
+  ['mod luma']: ['10,5,95', '19,5,78', '45,7,34', '45,3,32'],
+  ['bisexual']: ['58,7,53', '54,2,57', '39,7,43', '58,7,53'],
+  ['pansexual']: ['58,7,70', '8,7,64', '40,7,105', '40,7,105'],
+  ['asexual']: ['0,0,1', '0,0,37', '0,0,127', '53,7,33'],
+  ['lesbian']: ['2,7,53', '4,7,84', '0,0,127', '57,4,78'],
+  ['intersex']: ['9,7,64', '50,7,43', '50,7,43', '9,7,64'],
+  ['transgender']: ['35,7,86', '61,1,105', '0,0,127', '61,1,105'],
+  ['nonbinary']: ['10,7,76', '0,0,127', '48,4,76', '0,0,20'],
+  ['genderfluid']: ['0,0,127', '52,6,57', '0,0,1', '42,4,57'],
+  ['agender']: ['0,0,1', '0,0,37', '16,3,94', '0,0,127'],
+  ['trashcan']: ['58,0,13', '13,2,40', '58,0,13', '1,0,0'],
+  ['mod easty']: ['6,5,16', '35,7,105', '8,4,39', '9,7,16'],
+  ['sailing']: ['1,6,47', '0,0,115', '7,5,26', '38,7,47'],
+  ['mod dragon']: ['47,7,4', '46,7,23', '2,7,59', '47,7,3'],
 };
 
 const DEFAULT_SETTINGS = {
@@ -161,7 +161,11 @@ function formatRawColorValue(string, mode) {
     return `hsl(${string})`;
   }
   if (mode === 'rhsl') {
-    return `rhsl(${string})`;
+    string = `rhsl(${string})`
+    if (string.split(',')[2]) {
+      return `hsl(${getHue(string,true)},${getSaturation(string,true)}%,${getLuminosity(string,true)}%)`
+    }
+    return string
   }
   if (mode === 'hex') {
     return `#${string}`;
@@ -338,7 +342,7 @@ function syncTextInput(target, index) {
   if (mode === 'hsl') {
     convertedValue = getNumbersFromColorString(tinycolor(originalValue).toHslString());
   } else if (mode === 'rhsl') {
-    const hslStr = getNumbersFromColorString(tinycolor(originalValue).toHslString());
+    const hslStr = tinycolor(originalValue).toHslString();
     convertedValue = getHue(hslStr) + ', ' + getSaturation(hslStr) + ', ' + getLuminosity(hslStr);
   } else if (mode === 'hex') {
     convertedValue = getNumbersFromColorString(originalValue);
@@ -351,19 +355,14 @@ function syncTextInput(target, index) {
 }
 
 function handleModeChange(mode) {
-  let oldMode = currentConfig.mode;
+  const oldMode = currentConfig.mode;
   const { colorInputs, modePrefixes, modePostfixes } = elementCache;
   const isHsl = mode === 'hsl';
   const isRHsl = mode === 'rhsl';
   const isHex = mode === 'hex';
   currentConfig.mode = mode;
   for (let i = 0, l = colorInputs.length; i < l; i += 1) {
-    let thisValue = colorInputs[i].value;
-    if (oldMode == 'rhsl') {
-      thisValue = '(' + thisValue + ')';
-      thisValue = getHue(thisValue,true) + ', ' + getSaturation(thisValue,true) + '%, ' + getLuminosity(thisValue,true);
-      oldMode = 'hsl';
-    }
+    const thisValue = colorInputs[i].value;
     const oldValueFormatted = formatRawColorValue(thisValue, oldMode);
     const newValueFormatted = formatRawColorValue(thisValue, mode);
     const tcOldColor = tinycolor(oldValueFormatted);
@@ -452,19 +451,19 @@ function handlePresetSelect(event) {
   currentConfig.preset = value;
   if (presetColors[value]) {
     presetColors[value].forEach((rhsl,i) => {
-      const hsl = 'hsl(' + getHue(rhsl,true) + ', ' + getSaturation(rhsl,true) + '%, ' + getLuminosity(rhsl,true) + '%)'
+      const hsl = formatRawColorValue(rhsl, 'rhsl');
       let convertedValue;
       if (mode === 'hsl') {
         convertedValue = getNumbersFromColorString(tinycolor(hsl).toHslString());
       } else if (mode === 'rhsl') {
-        convertedValue = getNumbersFromColorString(rhsl);
+        convertedValue = rhsl;
       } else if (mode === 'hex') {
         convertedValue = tinycolor(hsl).toHex();
       } else {
         convertedValue = getNumbersFromColorString(tinycolor(hsl).toRgbString());
       }
       colorInputs[i].value = convertedValue;
-      updateColors(hsl, i);
+      updateColors(convertedValue, i);
     });
   }
 }
