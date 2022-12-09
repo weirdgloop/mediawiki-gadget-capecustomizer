@@ -27,7 +27,9 @@ For this reason, prettified HTML is available in the templates folder. This ca b
 
 Alternatively they can be minified using the functions below in your browser console when it is ready.
 
-```
+```javascript
+let mySVGTemplate = `paste your template code inside these backticks`;
+
 // minification is good enough for our purposes here; probably not a flawless solution
 function hackyTemplateMinification(templateLiteral) {
   // remove whitespace between one closing tag > and the next opening tag <
