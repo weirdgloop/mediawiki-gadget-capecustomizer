@@ -1,0 +1,116 @@
+<svg id="cape-particles-svg" class="rsCapeCustomizer_capeParticles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="561" height="350" viewBox="0 0 561 350">
+<style></style>
+<style>
+  .particles {
+    fill: #fff;
+  }
+  .td-1, .td-2 {
+    filter: url(#blur1);
+    opacity: 0.5;
+  }
+  .c-1 {
+    filter: url(#blur2);
+    opacity: 0.7;
+  }
+  .c-2 {
+    filter: url(#blur3);
+    opacity: 0.5;
+  }
+  .c-3 {
+    filter: url(#blur4);
+    opacity: 0.5;
+  }
+  .c-4 {
+    filter: url(#blur4);
+    opacity: 0.2;
+  }
+</style>
+<defs>
+  <filter id="blur1" x="-25%" y="-50%" width="150%" height="200%">
+  	<feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+  </filter>
+  <filter id="blur2" x="-25%" y="-25%" width="150%" height="150%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+  </filter>
+  <filter id="blur3" x="-25%" y="-25%" width="150%" height="150%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+  </filter>
+  <filter id="blur4" x="-5%" y="-5%" width="110%" height="110%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+  </filter>
+</defs>
+<g id='particles' class='particles'>
+  <g id="outer-l" class="outerParts">
+    <path class="td-1" d="m71.3,171.3c-11.2,0 -37.3,-89 -37.3,-101.7c0,-61.2 74.6,-64.9 74.6,0s-23.9,101.7 -37.3,101.7z"/>
+    <path class="td-2" d="m71.3,147c-7.5,0 -25.1,-59.9 -25.1,-68.5c0,-41.2 50.2,-43.7 50.2,0s-16.1,68.5 -25.1,68.5z"/>
+    <circle class="c-1" cx="71.3" cy="63" r="29.1"/>
+    <circle class="c-2" cx="71.3" cy="117.9" r="11.2"/>
+    <circle class="c-3" cx="71.3" cy="186" r="11.2"/>
+    <circle class="c-4" cx="71.3" cy="215.4" r="11.2"/>
+  </g>
+  <g id="mid-l" class="midParts">
+    <path class="td-1" d="m117.4,193.9c-11.2,0 -37.3,-89 -37.3,-101.7c0,-61.2 74.6,-64.9 74.6,0s-23.9,101.7 -37.3,101.7z"/>
+    <path class="td-2" d="m117.4,169.5c-7.5,0 -25.1,-59.9 -25.1,-68.5c0,-41.2 50.2,-43.7 50.2,0s-16.1,68.5 -25.1,68.5z"/>
+    <circle class="c-1" cx="117.4" cy="85.6" r="29.1"/>
+    <circle class="c-2" cx="117.4" cy="140.4" r="11.2"/>
+    <circle class="c-3" cx="117.4" cy="208.5" r="11.2"/>
+    <circle class="c-4" cx="117.4" cy="237.9" r="11.2"/>
+  </g>
+  <g id="inner-l" class="innerParts">
+    <path class="td-1" d="m161.8,227.1c-11.2,0 -37.3,-89 -37.3,-101.7c0,-61.2 74.6,-64.9 74.6,0s-23.9,101.7 -37.3,101.7z"/>
+    <path class="td-2" d="m161.8,202.8c-7.5,0 -25.1,-59.9 -25.1,-68.5c0,-41.2 50.2,-43.7 50.2,0s-16.1,68.5 -25.1,68.5z"/>
+    <circle class="c-1" cx="161.8" cy="118.8" r="29.1"/>
+    <circle class="c-2" cx="161.8" cy="173.7" r="11.2"/>
+    <circle class="c-3" cx="161.8" cy="241.8" r="11.2"/>
+    <circle class="c-4" cx="161.8" cy="271.2" r="11.2"/>
+  </g>
+  <g id="center-l" class="centerParts">
+    <path class="td-1" d="m236.3,277.4c-11.2,0 -37.3,-89 -37.3,-101.7c0,-61.2 74.6,-64.9 74.6,0s-23.9,101.7 -37.3,101.7z"/>
+    <path class="td-1" d="m236.3,253.1c-7.5,0 -25.1,-59.9 -25.1,-68.5c0,-41.2 50.2,-43.7 50.2,0s-16.1,68.5 -25.1,68.5z"/>
+    <circle class="c-1" cx="236.3" cy="169.1" r="29.1"/>
+    <circle class="c-2" cx="236.3" cy="224" r="11.2"/>
+    <circle class="c-3" cx="236.3" cy="292.1" r="11.2"/>
+    <circle class="c-4" cx="236.3" cy="321.5" r="11.2"/>
+  </g>
+  <g id="center-c" class="centerParts">
+    <path class="td-1" d="m279.8,296c-11.2,0 -37.3,-89 -37.3,-101.7c0,-61.2 74.6,-64.9 74.6,0s-23.9,101.7 -37.3,101.7z"/>
+    <path class="td-1" d="m279.8,271.7c-7.5,0 -25.1,-59.9 -25.1,-68.5c0,-41.2 50.2,-43.7 50.2,0s-16.1,68.5 -25.1,68.5z"/>
+    <circle class="c-1" cx="279.8" cy="187.7" r="29.1"/>
+    <circle class="c-2" cx="279.8" cy="242.6" r="11.2"/>
+    <circle class="c-3" cx="279.8" cy="310.7" r="11.2"/>
+    <circle class="c-4" cx="279.8" cy="340.1" r="11.2"/>
+  </g>
+  <g id="outer-r" class="outerParts">
+    <path class="td-1" d="m488.3,171.3c11.2,0 37.3,-89 37.3,-101.7c0,-61.2 -74.6,-64.9 -74.6,0c0,10.5 23.9,101.7 37.3,101.7z"/>
+    <path class="td-1" d="m488.3,147c7.5,0 25.1,-59.9 25.1,-68.5c0,-41.2 -50.2,-43.7 -50.2,0c0,7.1 16.1,68.5 25.1,68.5z"/>
+    <circle class="c-1" cx="488.3" cy="63" r="29.1"/>
+    <circle class="c-2" cx="488.3" cy="117.9" r="11.2"/>
+    <circle class="c-3" cx="488.3" cy="186" r="11.2"/>
+    <circle class="c-4" cx="488.3" cy="215.4" r="11.2"/>
+  </g>
+  <g id="mid-r" class="midParts">
+    <path class="td-1" d="m442.2,193.9c11.2,0 37.3,-89 37.3,-101.7c0,-61.2 -74.6,-64.9 -74.6,0c0,10.5 23.9,101.7 37.3,101.7z"/>
+    <path class="td-1" d="m442.2,169.5c7.5,0 25.1,-59.9 25.1,-68.5c0,-41.2 -50.2,-43.7 -50.2,0c0,7.1 16.1,68.5 25.1,68.5z"/>
+    <circle class="c-1" cx="442.2" cy="85.6" r="29.1"/>
+    <circle class="c-2" cx="442.2" cy="140.4" r="11.2"/>
+    <circle class="c-3" cx="442.2" cy="208.5" r="11.2"/>
+    <circle class="c-4" cx="442.2" cy="237.9" r="11.2"/>
+  </g>
+  <g id="inner-r" class="innerParts">
+    <path class="td-1" d="m397.8,227.1c11.2,0 37.3,-89 37.3,-101.7c0,-61.2 -74.6,-64.9 -74.6,0c0,10.5 23.9,101.7 37.3,101.7z"/>
+    <path class="td-1" d="m397.8,202.8c7.5,0 25.1,-59.9 25.1,-68.5c0,-41.2 -50.2,-43.7 -50.2,0c0,7.1 16.1,68.5 25.1,68.5z"/>
+    <circle class="c-1" cx="397.8" cy="118.8" r="29.1"/>
+    <circle class="c-2" cx="397.8" cy="173.7" r="11.2"/>
+    <circle class="c-3" cx="397.8" cy="241.8" r="11.2"/>
+    <circle class="c-4" cx="397.8" cy="271.2" r="11.2"/>
+  </g>
+  <g id="center-r" class="centerParts">
+    <path class="td-1" d="m323.3,277.4c11.2,0 37.3,-89 37.3,-101.7c0,-61.2 -74.6,-64.9 -74.6,0c0,10.5 23.9,101.7 37.3,101.7z"/>
+    <path class="td-1" d="m323.3,253.1c7.5,0 25.1,-59.9 25.1,-68.5c0,-41.2 -50.2,-43.7 -50.2,0c0,7.1 16.1,68.5 25.1,68.5z"/>
+    <circle class="c-1" cx="323.3" cy="169.1" r="29.1"/>
+    <circle class="c-2" cx="323.3" cy="224" r="11.2"/>
+    <circle class="c-3" cx="323.3" cy="292.1" r="11.2"/>
+    <circle class="c-4" cx="323.3" cy="321.5" r="11.2"/>
+  </g>
+</g>
+</svg>
